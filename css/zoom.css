@@ -1,0 +1,20 @@
+.small_pic{
+    display: block;
+    width:   150px;
+    margin:  0px 0 0px 150px;
+}
+
+.big_pic{
+    /*position: relative;*/
+    width:    0;
+    -webkit-transition: width 5s linear 0s;
+    -moz-transition:    width 5s linear 0s;
+    transition:         width 5s linear 0s;
+    z-index:  10;
+    margin:   0px 0px 0px 300px;
+}
+
+.small_pic:hover + .big_pic{
+    width: 20%;
+    background-color: #ccc;
+}
